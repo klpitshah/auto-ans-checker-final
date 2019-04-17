@@ -1,0 +1,22 @@
+
+use global time
+
+
+
+
+protect all routes
+
+change jumbotron to -> ???
+
+navbar field color ACTIVE DEACTIVE 
+
+
+
+
+exam cred save and load
+
+
+res and flash create test
+
+
+change flash on register batch
