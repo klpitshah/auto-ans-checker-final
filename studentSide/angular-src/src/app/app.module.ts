@@ -38,6 +38,7 @@ import { ChangepasswordComponent } from './components/changepassword/changepassw
 import { ForgetpasswordComponent } from './components/forgetpassword/forgetpassword.component';
 import { CreatetestComponent } from './components/createtest/createtest.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { PermissionDeniedComponent } from './components/permission-denied/permission-denied.component';
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
   {path:'register', component: RegisterComponent, canActivate:[AdminGuard]},
@@ -48,7 +49,8 @@ const appRoutes: Routes =  [
   {path:'changepass', component: ChangepasswordComponent, canActivate:[AuthGuard]},
   {path:'forgetpass', component: ForgetpasswordComponent},
   {path:'exam', component: ExamComponent, canActivate:[StudentGuard]},
-  {path:'createtest', component: CreatetestComponent, canActivate:[ProfessorGuard]},
+  {path:'createtest', component: CreatetestComponent, canActivate:[ProfessorGuard]}, 
+  {path:'permissiondenied', component: PermissionDeniedComponent}, 
   {path:'**', component: NotfoundComponent}
 ]
 
@@ -67,7 +69,8 @@ const appRoutes: Routes =  [
     CreatetestComponent,
     ForgetpasswordComponent,
     SpinnerComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    PermissionDeniedComponent
   ],
   imports: [
     BrowserModule,

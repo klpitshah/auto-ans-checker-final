@@ -19,7 +19,7 @@ export class ProfessorGuard implements CanActivate{
             return true;
         }
         else{
-            this.router.navigate(['']);
+            this.router.navigate(['/permissiondenied']);
             return false;
         }
     }
