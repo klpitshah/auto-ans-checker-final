@@ -1,5 +1,5 @@
 <div class="jumbotron text-center">
-    <img src="http://i66.tinypic.com/11r7i8h.png" alt="daiict" height="100" width="100" class="center">
+    <!-- <img src="http://i66.tinypic.com/11r7i8h.png" alt="daiict" height="100" width="100" class="center"> -->
     <h2 class="page-header">Professor Registration</h2>
 </div>
 <div class="text-center shadow-lg p-3 mb-5 bg-white rounded w-50 p-3 mx-auto">
@@ -17,17 +17,19 @@
     <div>
       <mat-form-field class="manage-display">
       <input matInput formControlName="username" [(ngModel)]="username" name="username" placeholder="Username" required>
+      <mat-hint>Prefix of "@daiict.ac.in"</mat-hint>
       <mat-error *ngIf="!myForm.controls.username.valid">
       </mat-error>
       </mat-form-field>
     </div>
-    <div>
+    <br />
+    <!-- <div>
       <mat-form-field class="manage-display">
       <input matInput formControlName="email" [(ngModel)]="email" name="email" placeholder="Email" required>
       <mat-error *ngIf="!myForm.controls.email.valid">
       </mat-error>
       </mat-form-field>
-    </div>
+    </div> -->
 
     
     <!-- <div class="dropdown" dropdown [dropdownToggle]="false">
@@ -39,8 +41,8 @@
       </ul>
   </div> -->
     <div class="text-center">
-    <input disabled *ngIf='!myForm.controls.name.valid || !myForm.controls.username.valid || !myForm.controls.email.valid' type="submit" class="btn btn-primary" value="Generate Password and Send">
-    <input *ngIf='myForm.controls.name.valid && myForm.controls.username.valid && myForm.controls.email.valid' type="submit" class="btn btn-primary" value="Generate Password and Send">
+    <input disabled *ngIf='!myForm.controls.name.valid || !myForm.controls.username.valid' type="submit" class="btn btn-primary" value="Generate Password and Send">
+    <input *ngIf='myForm.controls.name.valid && myForm.controls.username.valid' type="submit" class="btn btn-primary" value="Generate Password and Send">
   </div>
   </form>
 </div>

@@ -67,7 +67,7 @@ export class ForgetpasswordComponent implements OnInit {
   }
 
   matchOTPclick(){
-    this.otpGen = "0000";
+    // this.otpGen = "0000";
 
     if(this.myForm.value.otpEntered == this.otpGen){
       this.otpMatched = true;

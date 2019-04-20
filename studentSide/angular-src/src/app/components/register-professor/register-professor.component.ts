@@ -30,7 +30,6 @@ export class RegisterProfessorComponent implements OnInit {
   ngOnInit() {
     this.myForm = this._fb.group({
       name: ['',[Validators.required]],
-      email: ['',[Validators.required]],
       username: ['',[Validators.required]]
     })
   }
@@ -40,7 +39,7 @@ export class RegisterProfessorComponent implements OnInit {
     this.password = this.generatePassword();
     const user = {
       name: this.myForm.value.name,
-      email: this.myForm.value.email,
+      email: this.myForm.value.username + '@daiict.ac.in',
       username: this.myForm.value.username,
       profession : 'professor',
       password: this.password

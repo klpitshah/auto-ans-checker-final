@@ -43,6 +43,7 @@ export class CreatetestComponent implements OnInit {
           starthh: ['',[Validators.required]],
           startmm: ['',[Validators.required]],
           startss: ['',[Validators.required]],
+          profusername: [JSON.parse(localStorage.getItem('user')).username],
           durationhh: ['',[Validators.required]],
           durationmm: ['',[Validators.required]],
           durationss: ['',[Validators.required]],

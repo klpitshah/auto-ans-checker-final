@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Http, Headers} from '@angular/http';
+import { timeout } from 'rxjs/operators/timeout';
 import { map } from 'rxjs/operators';
 
 @Injectable()
@@ -24,6 +25,7 @@ export class TestService {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
     return this.http.post('http://localhost:3000/users/trainmodel',json, {headers:headers})
+    .pipe(timeout(600000))
     .map(res => res.json());
   }
 

@@ -15,7 +15,7 @@ router.post('/createtest',(req,res,next)=>{
         program: req.body.program,
         code: req.body.code,
         qset: req.body.qset,
-        profusername: "XYZ",
+        profusername: req.body.profusername,
         startdate: req.body.startdate,
         starthh: req.body.starthh,
         startmm: req.body.startmm,
