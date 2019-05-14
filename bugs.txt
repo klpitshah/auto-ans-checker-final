@@ -4,7 +4,7 @@ use global time
 
 
 
-protect all routes
+----->protect all routes
 
 change jumbotron to -> ???
 
@@ -13,10 +13,16 @@ navbar field color ACTIVE DEACTIVE
 
 
 
-exam cred save and load
+----->exam cred save and load
 
 
-res and flash create test
+----->res and flash create test
 
 
-change flash on register batch
+----->change flash on register batch
+
+
+
+----->login button after login
+
+exam filter + date filter in exam
